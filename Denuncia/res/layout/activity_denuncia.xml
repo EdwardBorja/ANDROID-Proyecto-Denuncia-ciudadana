@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.denuncia.EntradaActivity" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+      <TextView android:id="@+id/LblMensaje"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:textStyle="bold"
+	    android:text="selecciona_una_opcion" />
+    
+	<Spinner android:id="@+id/CmbOpciones"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" />      
+            
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_x="35dp"
+                android:layout_y="10dp"
+                android:text="Descripcion de los hechos"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editText1"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_weight="1854.74"
+                android:ems="10"
+                android:inputType="textMultiLine" >
+
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:text="Tomar foto o adjuntar de la galeria"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TableLayout
+                android:id="@+id/Tabla"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1" >
+
+                <TableRow>
+
+                    <FrameLayout>
+
+                        <ImageButton
+                            android:id="@+id/imageButton1"
+                            android:layout_width="138dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/camaras" />
+                    </FrameLayout>
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/agrega" />
+                   
+                </TableRow>
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/imgView"
+                android:layout_width="288dp"
+                android:layout_height="228dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.63"
+                android:src="@drawable/cam" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="35dp"
+                android:layout_y="10dp"
+                android:text="
+                "
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/LblPosicion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Posicion actual" />
+
+            <TextView
+                android:id="@+id/LblPosLatitud"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:background="#aaaaaa"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/LblPosLongitud"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="5dp"
+                android:background="#aaaaaa"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/LblPosPrecision"
+                android:layout_width="231dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:background="#aaaaaa"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/BtnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center"
+                android:text="Actualizar gps" />
+
+        
+               
+
+                    <TextView
+                        android:id="@+id/LblEst"
+                        android:layout_width="match_parent"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:text="Estado del Gps" />
+
+                    <TextView
+                        android:id="@+id/LblEstado"
+                        android:layout_width="229dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="#aaaaaa"
+                        android:textColor="#000000" />
+                    
+                                <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+                                
+                                
+                     <Button
+                android:id="@+id/BtnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Enviar denuncia" />
+             
+        </LinearLayout>
+
+    </ScrollView>
+
+   
+
+</RelativeLayout>
